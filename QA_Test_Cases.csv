@@ -1,0 +1,29 @@
+Case ID,Section,Title,Preconditions,Steps,Expected Result,Priority,Type,Automation Status
+TC-01,User Registration,Verify successful registration,User on registration page,"1. Enter valid email
+2. Enter valid password
+3. Click Register",User is registered successfully,High,Smoke,No
+TC-02,User Registration,Validate email format,User on registration page,"1. Enter invalid email (test@)
+2. Click Register",Validation error displayed,Medium,Regression,No
+TC-03,User Registration,Submit empty fields,User on registration page,"1. Leave fields empty
+2. Click Register",Required field errors displayed,Medium,Regression,No
+TC-04,User Registration,Password minimum length,User on registration page,"1. Enter password < 6 chars
+2. Submit",Error message for short password,Medium,Regression,No
+TC-05,User Registration,Register existing email,User exists,"1. Enter existing email
+2. Submit",Error 'User already exists',High,Regression,No
+TC-06,Login,Valid login,User exists,"1. Enter valid credentials
+2. Login",User logged in,High,Smoke,No
+TC-07,Login,Invalid password,User exists,"1. Enter wrong password
+2. Login",Error message displayed,High,Regression,No
+TC-08,Login,Empty fields,Login page open,1. Click Login without data,Validation errors,Medium,Regression,No
+TC-09,Validation,Email validation,Form open,Enter invalid email,Only valid format accepted,Medium,Regression,No
+TC-10,Validation,Password strength,Form open,Enter weak password,Weak password rejected,Medium,Regression,No
+TC-11,UI,Button click,Page open,Click button,Visual response present,Low,Smoke,No
+TC-12,UI,Responsive layout,Open mobile view,Resize screen,Layout adjusts correctly,High,Regression,No
+TC-13,API,GET request,API available,Send GET request,200 OK response,High,Smoke,No
+TC-14,API,POST valid data,API available,Send POST valid data,201 Created,High,Regression,No
+TC-15,API,Invalid data,API available,Send invalid data,400 Bad Request,High,Regression,No
+TC-16,Edge,Long input,Form open,Enter very long string,Handled correctly,Medium,Regression,No
+TC-17,Edge,Special chars,Form open,Enter symbols,No crash,Medium,Regression,No
+TC-18,Edge,Network loss,App running,Disconnect internet,Error handled,High,Regression,No
+TC-19,Session,Logout,User logged in,Click logout,User logged out,High,Smoke,No
+TC-20,Session,Session expiry,User logged in,Wait for timeout,Redirect to login,Medium,Regression,No

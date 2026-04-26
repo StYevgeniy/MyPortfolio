@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: portfolio.1qip1.com
+Sitemap: https://portfolio.1qip1.com/sitemap.xml

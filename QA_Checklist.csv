@@ -1,0 +1,10 @@
+Module,Check,Status
+Registration,Page loads,
+Registration,Fields visible,
+Registration,Validation works,
+Login,Login works,
+Login,Errors displayed,
+UI,Responsive,
+UI,Buttons clickable,
+API,Status codes correct,
+API,Response valid,

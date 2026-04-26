@@ -1,0 +1,6 @@
+Bug ID,Title,Severity,Steps,Expected Result,Actual Result,Status
+BUG-01,Email validation missing,Medium,"1. Enter invalid email
+2. Submit",Error message,No validation,Open
+BUG-02,API returns wrong status,High,1. Send invalid request,400 error,200 OK,Open
+BUG-03,Button not clickable,Critical,1. Click submit,Action happens,No response,Open
+BUG-04,Layout breaks mobile,Medium,1. Open on mobile,Responsive UI,Elements overlap,Open
