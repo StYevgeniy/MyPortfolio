@@ -14,34 +14,127 @@
   <meta property="og:title" content="Yevgeniy Storozhenko — Front-End Developer & QA Engineer">
   <meta property="og:description"
     content="Portfolio and resume of a Middle Front-End Developer and QA Engineer with experience in web development, testing, and SEO.">
-  <meta property="og:url" content="http://portfolio.1qip1.com/index.html">
-  <meta property="og:image" content="http://portfolio.1qip1.com/img/photo.webp">
+  <meta property="og:url" content="https://portfolio.1qip1.com/">
+  <meta property="og:image" content="https://portfolio.1qip1.com/img/photo.webp">
   <meta property="og:site_name" content="Yevgeniy Storozhenko Portfolio">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="http://portfolio.1qip1.com/index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="manifest" href="manifest.json">
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://portfolio.1qip1.com/">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="apple-touch-icon" href="/img/apple-icon-180.png">
   <!-- Structured Data -->
   <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Person",
- "name":"Yevgeniy Storozhenko",
- "jobTitle":"QA Engineer",
- "email":"styevgeniy@gmail.com",
- "telephone":"+380503640747",
- "url":"https://portfolio.1qip1.com",
- "sameAs":["https://linkedin.com/in/yevgeniy-storozhenko","https://github.com/StYevgeniy"],
- "image":"https://portfolio.1qip1.com/img/photo.webp",
- "worksFor":[{"@type":"Organization","name":"Test Team Now"}]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://portfolio.1qip1.com/#person",
+      "name": "Yevgeniy Storozhenko",
+      "jobTitle": "Front-End Developer & QA Engineer",
+      "email": "mailto:styevgeniy@gmail.com",
+      "telephone": "+380503640747",
+      "url": "https://portfolio.1qip1.com/",
+      "image": "https://portfolio.1qip1.com/img/photo.webp",
+      "sameAs": [
+        "https://www.linkedin.com/in/yevgeniy-storozhenko",
+        "https://github.com/StYevgeniy",
+        "https://www.upwork.com/freelancers/~01e5efda63ca91f8b1"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "1qip1 Private Company"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://portfolio.1qip1.com/#website",
+      "url": "https://portfolio.1qip1.com/",
+      "name": "Yevgeniy Storozhenko Portfolio",
+      "description": "Portfolio and resume of Yevgeniy Storozhenko, Front-End Developer and QA Engineer",
+      "publisher": {
+        "@id": "https://portfolio.1qip1.com/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://portfolio.1qip1.com/#webpage",
+      "url": "https://portfolio.1qip1.com/",
+      "name": "Yevgeniy Storozhenko — Front-End Developer & QA Engineer",
+      "isPartOf": {
+        "@id": "https://portfolio.1qip1.com/#website"
+      },
+      "about": {
+        "@id": "https://portfolio.1qip1.com/#person"
+      },
+      "breadcrumb": {
+        "@id": "https://portfolio.1qip1.com/#breadcrumb"
+      },
+      "description": "Portfolio and resume of a Front-End Developer and QA Engineer with experience in web development, testing, and SEO."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://portfolio.1qip1.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Resume",
+          "item": "https://portfolio.1qip1.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": "https://portfolio.1qip1.com/projects.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "QA Portfolio",
+          "item": "https://portfolio.1qip1.com/qa-portfolio.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://portfolio.1qip1.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Yevgeniy Storozhenko do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yevgeniy Storozhenko is a Front-End Developer and QA Engineer specializing in web development, QA testing, SEO, and UI optimization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies does he use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "He works with HTML5, CSS3, TailwindCSS, OpenCart, Jira, TestRail, PostgreSQL, Figma, and GitHub."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services does he provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "He provides front-end development, website QA testing, SEO optimization, bug fixing, and technical website support."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
-  <link rel="icon" type="image/webp" href="img/favicon.webp">
 </head>
 
 <body>
@@ -51,7 +144,8 @@
     <div class="header">
       <div>
         <h1 class="header-name">Yevgeniy<br>Storozhenko
-          <img src="img/photo.webp" class="avatar" alt="Yevgeniy Storozhenko" decoding="async" fetchpriority="high">
+          <img src="img/photo.webp" class="avatar" alt="Yevgeniy Storozhenko" decoding="async" fetchpriority="high"
+            loading="eager">
         </h1>
         <div class="header-title">Front-End Developer &amp; QA Engineer</div>
         <div class="header-summary">
@@ -110,7 +204,7 @@
 
     <!-- NAVIGATION -->
     <nav class="main-nav">
-      <a href="index.html" class="nav-link active">Resume</a>
+      <a href="/" class="nav-link active">Resume</a>
       <a href="projects.html" class="nav-link">Projects</a>
       <a href="qa-portfolio.html" class="nav-link">QA Portfolio</a>
     </nav>
@@ -123,7 +217,7 @@
 
         <!-- TECH SKILLS -->
         <div class="section">
-          <div class="section-title">Tech Skills</div>
+          <h2 class="section-title">Tech Skills</h2>
           <div class="skill-group">
             <div class="skill-group-label">Frontend</div>
             <div class="tags">
@@ -172,7 +266,7 @@
 
         <!-- EDUCATION -->
         <div class="section">
-          <div class="section-title">Education</div>
+          <h2 class="section-title">Education</h2>
           <div class="edu-item">
             <div class="edu-degree">QA Engineer</div>
             <div class="edu-school">IT.LIFE Academy</div>
@@ -202,7 +296,7 @@
 
         <!-- SOFT SKILLS -->
         <div class="section">
-          <div class="section-title">Soft Skills</div>
+          <h2 class="section-title">Soft Skills</h2>
           <ul class="soft-list">
             <li>Team management (2–30 members)</li>
             <li>Technical specification development</li>
@@ -222,7 +316,7 @@
 
         <!-- EXPERIENCE -->
         <div class="section">
-          <div class="section-title">Work Experience</div>
+          <h2 class="section-title">Work Experience</h2>
 
           <div class="exp-item">
             <div class="exp-header">
@@ -275,7 +369,7 @@
 
         <!-- SELECTED PROJECTS PREVIEW -->
         <div class="section">
-          <div class="section-title">Selected Projects</div>
+          <h2 class="section-title">Selected Projects</h2>
 
           <div class="project-item">
             <div>
@@ -359,8 +453,34 @@
           </div>
         </div>
 
+        <section class="section faq-section">
+          <h2 class="section-title">FAQ</h2>
+
+          <div class="faq-item">
+            <h3>What does Yevgeniy Storozhenko do?</h3>
+            <p>Yevgeniy Storozhenko is a Front-End Developer and QA Engineer specializing in web development, QA
+              testing, SEO, and UI optimization.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What technologies does he use?</h3>
+            <p>He works with HTML5, CSS3, TailwindCSS, OpenCart, Jira, TestRail, PostgreSQL, Figma, and GitHub.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What services does he provide?</h3>
+            <p>He provides front-end development, website QA testing, SEO optimization, bug fixing, and technical
+              website support.</p>
+          </div>
+        </section>
+
       </main>
     </div>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>© 2014 Yevgeniy Storozhenko · Front-End Developer &amp; QA Engineer · <a
+          href="mailto:styevgeniy@gmail.com">Email</a></p>
+    </footer>
   </div>
 </body>
 
