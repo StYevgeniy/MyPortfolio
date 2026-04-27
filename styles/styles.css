@@ -511,6 +511,7 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
+  aspect-ratio: 1 / 1;
 }
 
 .project-card-content {
